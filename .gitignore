@@ -1,60 +1,40 @@
 ```
-# Dependencies
-node_modules/
-
-# Build outputs
-dist/
-build/
-target/
-
 # Environment variables
 .env
 .env.local
 .env.*
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Virtual environments
+# Dependencies
+node_modules/
 venv/
 .venv/
-env/
+__pycache__/
+*.egg-info/
+dist/
+build/
+target/
 
-# IDE files
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# Logs
-*.log
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Test coverage
+# Coverage reports
 coverage/
 htmlcov/
 .coverage
 
-# Temporary files
-*.tmp
-*.temp
-
-# MyPy cache
-.mypy_cache/
-
-# Pytest cache
-.pytest_cache/
-
-# NestJS specific
-.nyc_output/
-coverage/
-
-# TypeScript/JavaScript build artifacts
-*.tsbuildinfo
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+.Python
 ```
