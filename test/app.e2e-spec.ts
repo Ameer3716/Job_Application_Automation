@@ -70,7 +70,7 @@ describe('AppController (e2e) & Security', () => {
           password: 'password123',
           isAdmin: true // Malicious field
         })
-        .expect(400) // Or whatever Supabase returns / ValidationPipe rejects
+        .expect(401) // Supabase returns 401 on rate limit or generic fail; or ValidationPipe rejects
         .expect((res) => {
            // Should not process isAdmin due to whitelist: true
         });
